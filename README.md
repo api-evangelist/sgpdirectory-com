@@ -64,44 +64,28 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-sgpdirectory-com provides a public API for Singapore Business Directory data. apis: - name: SGP Directory API description: Public API for accessing Singapore Business Directory data. humanURL: https://sgpdirectory.com/docs baseURL: https://api.sgpdirectory.com/v1 openapi: url: openapi/sgpdirectory-com-openapi.json type: OpenAPI (provider-hosted) in the API Evangelist catalog, representing a company that provides a directory of Singapore-based businesses and services. The entry currently lacks publicly accessible documentation or a verified website, and further investigation is needed to confirm its online presence and API offerings. This placeholder description will be expanded as more information becomes available.
+sgpdirectory-com is a company surfaced via the API Evangelist harvest backlog (source: mcp-registry) and added to the network as a stub for full-pipeline profiling.
 
-**Areas:** Company · Directory · Singapore · Business · API
+**Areas:** Company
 
 ## sgpdirectory-com on APIs.io
 
 Everything profiled for sgpdirectory-com is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/sgpdirectory-com/](https://apis.io/providers/sgpdirectory-com/)** — or go straight to one of the APIs or properties below.
 
-### APIs (1)
+### APIs (2)
 
-- [SGP Directory API API](https://apis.io/apis/sgpdirectory-com/sgp-directory-api-api/) — Public API for accessing Singapore Business Directory data. Date fields use YYYY-MM-DD. Datetime fields use ISO-8601 date-time. Rate-limit reset timestamps…
+- [sgpdirectory-com Entities API](https://apis.io/apis/sgpdirectory-com/sgpdirectory-com-entities-api/) — The Entities API from sgpdirectory-com — 8 operation(s) for entities.
+- [sgpdirectory-com SSIC API](https://apis.io/apis/sgpdirectory-com/sgpdirectory-com-ssic-api/) — The SSIC API from sgpdirectory-com — 1 operation(s) for ssic.
 
 ### Published properties
 
 Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-#### JSON Schema (6)
+#### Overlays (1)
 
-The data models the API reads and writes.
+OpenAPI overlays, including conversational phrasing for each operation.
 
-- [Entity](https://apis.io/schemas/sgpdirectory-com/sgpdirectory-com-entity/)
-- [EntityCompliance](https://apis.io/schemas/sgpdirectory-com/sgpdirectory-com-entity-compliance/)
-- [EntityFinancials](https://apis.io/schemas/sgpdirectory-com/sgpdirectory-com-entity-financials/)
-- [EntityShareholder](https://apis.io/schemas/sgpdirectory-com/sgpdirectory-com-entity-shareholder/)
-- [NameCheckResponse](https://apis.io/schemas/sgpdirectory-com/sgpdirectory-com-name-check-response/)
-- [SearchEntitiesResponse](https://apis.io/schemas/sgpdirectory-com/sgpdirectory-com-search-entities-response/)
-
-#### JSON-LD (1)
-
-Linked-data contexts for the provider's vocabulary.
-
-- [Sgpdirectory Com Context](https://apis.io/jsonld/sgpdirectory-com/sgpdirectory-com-context/)
-
-#### Governance rules (1)
-
-Spectral rulesets for the provider's contracts.
-
-- [sgpdirectory-com API Rules](https://apis.io/rules/sgpdirectory-com/sgpdirectory-com-rules/)
+- [Sgpdirectory Com Openapi Overlay](https://apis.io/overlays/sgpdirectory-com/sgpdirectory-com-openapi-overlay/)
 
 #### Security (3)
 
@@ -110,6 +94,24 @@ Authentication, trust centre, and vulnerability disclosure.
 - [Sgpdirectory Com Authentication](https://apis.io/security/sgpdirectory-com/sgpdirectory-com-authentication/)
 - [Sgpdirectory Com Domain Security](https://apis.io/security/sgpdirectory-com/sgpdirectory-com-domain-security/)
 - [Sgpdirectory Com Vulnerability Disclosure](https://apis.io/security/sgpdirectory-com/sgpdirectory-com-vulnerability-disclosure/)
+
+#### OAuth scopes (1)
+
+The permissions the API asks for.
+
+- [Sgpdirectory Com Scopes](https://apis.io/scopes/sgpdirectory-com/sgpdirectory-com-scopes/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Sgpdirectory Com Plans Pricing](https://apis.io/plans/sgpdirectory-com/sgpdirectory-com-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Sgpdirectory Com Rate Limits](https://apis.io/rate-limits/sgpdirectory-com/sgpdirectory-com-rate-limits/)
 
 ## Where to find this API
 
@@ -124,18 +126,18 @@ Links to the company's own pages. This repository publishes no copy of their spe
 
 ## API Evangelist rating
 
-**Kin Score 44.6** — developing · rubric 0.25.0 · scored 2026-10-30
+**Kin Score 42.0** — developing · rubric 0.25.0 · scored 2026-10-30
 
 | Facet | Score |
 |---|---|
-| Discoverability | 62.5 |
-| Contract quality | 50.7 |
-| Contract governance | 70.9 |
-| Operational transparency | 10.5 |
-| Developer ergonomics | 33.3 |
+| Discoverability | 45.0 |
+| Contract quality | 47.8 |
+| Contract governance | 16.4 |
+| Operational transparency | 37.4 |
+| Developer ergonomics | 40.5 |
 | Access clarity | 34.2 |
 
-**Agent readiness 21.5** — agent-aware
+**Agent readiness 31.9** — agent-ready
 
 | Agent-readiness dimension | Result |
 |---|---|
@@ -146,8 +148,8 @@ Links to the company's own pages. This repository publishes no copy of their spe
 | Auth Clarity | bearer (partial credit) |
 | Idempotency | — |
 | Error Semantics | documented (partial credit) |
-| OpenAPI Examples | — |
-| Rate Limit Signal | — |
+| OpenAPI Examples | verified |
+| Rate Limit Signal | verified |
 | Event Surface Described | — |
 | Agent Skills | — |
 | Well Known Catalog | — |
@@ -158,10 +160,10 @@ Links to the company's own pages. This repository publishes no copy of their spe
 | Protected Resource Metadata | — |
 | Dynamic Client Registration | — |
 | Agentic Commerce | — |
-| Pagination Ratio | na |
-| Operation Distinctiveness | na |
+| Pagination Ratio | — |
+| Operation Distinctiveness | distinct |
 
-**Regulatory alignment 30.4** — Horizontal (data, software, accessibility, platform)
+**Regulatory alignment 40.2** — Horizontal (data, software, accessibility, platform)
 
 The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/sgpdirectory-com/](https://apis.io/providers/sgpdirectory-com/).
 
